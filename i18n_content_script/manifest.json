@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "WebExtension Test - i18n_content_script",
+	"version": "0.0.1",
+	"applications": {
+		"gecko": {
+			"id": "test-webext-i18n@example.com"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.example.com/*"
+			],
+			"js": [
+				"content_script.js"
+			]
+		}
+	]
+}
