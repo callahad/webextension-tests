@@ -1,0 +1,11 @@
+body {
+  background-image: url('https://b.thumbs.redditmedia.com/s_noD6Owp5p3Hhw9yoBB30iDpSyZFVetFqxtPDbteAw.png');
+}
+
+h1 {
+  background-image: url('moz-extension://__MSG_@@extension_id__/mosaic-background.565019b6e6bc.jpg');
+}
+
+p {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/mosaic-background.565019b6e6bc.jpg');
+}

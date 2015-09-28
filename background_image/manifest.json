@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "WebExtension Test - background_image",
+	"version": "0.0.1",
+	"applications": {
+		"gecko": {
+			"id": "test-webext-background-image@example.com"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.example.com/*"
+			],
+			"css": [
+				"style.css"
+			]
+		}
+	],
+	"web_accessible_resources": [
+		"mosaic-background.565019b6e6bc.jpg"
+	]
+}
