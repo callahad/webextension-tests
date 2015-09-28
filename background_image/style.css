@@ -1,11 +1,19 @@
+/* Implicit scheme */
 body {
+  background-image: url('//b.thumbs.redditmedia.com/s_noD6Owp5p3Hhw9yoBB30iDpSyZFVetFqxtPDbteAw.png');
+}
+
+/* Explicit HTTPS scheme */
+a {
   background-image: url('https://b.thumbs.redditmedia.com/s_noD6Owp5p3Hhw9yoBB30iDpSyZFVetFqxtPDbteAw.png');
 }
 
+/* moz-extension + @@extension_id to a web_accessible_resource */
 h1 {
   background-image: url('moz-extension://__MSG_@@extension_id__/mosaic-background.565019b6e6bc.jpg');
 }
 
+/* chrome-extension + @@extension_id to a web_accessible_resource */
 p {
   background-image: url('chrome-extension://__MSG_@@extension_id__/mosaic-background.565019b6e6bc.jpg');
 }
