@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "WebExtension Test - incognito_context",
+	"version": "0.0.1",
+	"applications": {
+		"gecko": {
+			"id": "test-webext-incognito-context@example.com"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.example.com/*"
+			],
+			"js": [
+				"content_script.js"
+			]
+		}
+	]
+}
