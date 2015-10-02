@@ -6,8 +6,9 @@ XPIS:=$(addsuffix .xpi,$(DIRS))
 all: $(XPIS)
 
 clean:
-	rm -f *.xpi
+	@rm -f *.xpi
 
 $(XPIS):
-	rm -f "$@"
-	cd "$(basename $@)" && zip -r "../$@" *
+	@echo "Building $@"
+	@rm -f "$@"
+	@cd "$(basename $@)" && zip -qr "../$@" *
