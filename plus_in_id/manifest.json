@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "WebExtension Test - plus_in_id",
+	"version": "0.0.1",
+	"applications": {
+		"gecko": {
+			"id": "me+plus-in-id@example.com"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.example.com/*"
+			],
+			"js": [
+				"content_script.js"
+			]
+		}
+	]
+}
